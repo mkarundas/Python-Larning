@@ -162,9 +162,141 @@ result_44 = string_5.encode()
 print(result_44) # Output: b'python is fun.' :- default encoding to utf-8
 
 string_6 = 'pythön! is fun.'
-result_45 = string_6.encode("ascii", "ignore")
+result_45 = string_6.encode('ascii', 'ignore')
 print(result_45) # Output: b'pythn! is fun.' :- ignore error
 
 string_7 = 'pythön! is fun.'
-result_46 = string_7.encode("ascii", "replace")
+result_46 = string_7.encode('ascii', 'replace')
 print(result_46) # Output: b'pyth?n! is fun.' :- replace error
+
+##6. endswith()
+# This method returns True if the string ends with the specified value, otherwise False.
+
+string_8 = 'python is fun.'
+result_45 = string_8.endswith('fun.')
+print(result_45) # Output: True
+
+result_46 = string_8.endswith('fun.', 5, 10)
+print(result_46) # Output: False
+
+result_47 = string_8.endswith('fun.', 10, 14)
+print(result_47) # Output: True
+
+##7. expandtabs()
+# This method tab size to the specified number of whitespaces.
+
+string_9 = 'python\tis\tfun.'
+result_48 = string_9.expandtabs()
+print(result_48) # Output: python  is      fun.
+
+result_49 = string_9.expandtabs(1)
+print(result_49) # Output: python is fun.
+
+result_50 = string_9.expandtabs(2)
+print(result_50) # Output: python  is  fun.
+
+result_51 = string_9.expandtabs(5)
+print(result_51) # Output: python    is   fun.
+
+##8. find()
+# This method finds the first occurrence of the specified value.
+
+string_10 = 'python is fun.'
+result_52 = string_10.find('u')
+print(result_52) # Output: 11
+
+result_53 = string_10.find('z')
+print(result_53) # Output: -1 :- returns -1 if the value is not found.
+
+string_11 = 'good morning.'
+result_54 = string_11.find('o', 4, 9)
+print(result_54) # Output: 6 :- returns first occurance between position 4 and 9.
+
+string_12 = 'python is fun.'
+result_55 = string_12.find('is')
+print(result_55) # Output: 7
+
+##9. format()
+# This method formats the specified values and insert them inside the string's placeholder.
+
+string_13 = 'My name is {} and I am {} years old.'
+result_56 = string_13.format('John', 15)
+print(result_56) # Output: My name is John and I am 15 years old.
+
+string_14 = 'My name is {name} and I am {age} years old.'
+result_57 = string_14.format(name='John', age=15)
+print(result_57) # Output: My name is John and I am 15 years old.
+
+string_15 = 'My name is {0} and I am {1} years old.'
+result_58 = string_15.format('John', 15)
+print(result_58) # Output: My name is John and I am 15 years old.
+
+string_16 = 'My name is {1} and I am {0} years old.'
+result_59 = string_16.format(15, 'John')
+print(result_59) # Output: My name is John and I am 15 years old.
+
+##10. index()
+# This method finds the first occurrence of the specified value.
+# This method is the same as the find()
+
+string_17 = 'python is fun.'
+result_60 = string_17.index('u')
+print(result_60) # Output: 11
+
+string_18 = 'good morning.'
+result_61 = string_18.index('o', 4, 9)
+print(result_61) # Output: 6 :- returns first occurance between position 4 and 9.
+
+string_19 = 'python is fun.'
+result_62 = string_19.index('is')
+print(result_62) # Output: 7
+
+##11. isalnum()
+# This method returns True if all the characters are alphanumeric, meaning alphabet letter (a-z) and numbers (0-9).
+
+string_20 = 'python is fun'
+result_63 = string_20.isalnum()
+print(result_63) # Output: False
+
+string_21 = 'pythonisfun'
+result_64 = string_21.isalnum()
+print(result_64) # Output: True
+
+string_22 = 'python 2'
+result_65 = string_22.isalnum()
+print(result_65) # Output: False
+
+string_23 = 'python2'
+result_66 = string_23.isalnum()
+print(result_66) # Output: True
+
+##12. isalpha()
+# This method returns True if all the characters are alphabet letters (a-z)
+
+string_24 = 'python is fun'
+result_67 = string_24.isalpha()
+print(result_67) # Output: False
+
+string_25 = 'pythonisfun'
+result_68 = string_25.isalpha()
+print(result_68) # Output: True
+
+string_26 = 'pythonisfun123'
+result_69 = string_26.isalpha()
+print(result_69) # Output: False
+
+##13. isascii()
+# This method True if all the characters are ascii characters.
+
+string_27 = 'python is fun'
+result_70 = string_27.isascii()
+print(result_70) # Output: True
+
+string_28 = 'python 2'
+result_71 = string_28.isascii()
+print(result_71) # Output: True
+
+string_29 = 'pythön is fun'
+result_72 = string_29.isascii()
+print(result_72) # Output: False
+
