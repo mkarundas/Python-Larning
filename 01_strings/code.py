@@ -286,7 +286,7 @@ result_69 = string_26.isalpha()
 print(result_69) # Output: False
 
 ##13. isascii()
-# This method True if all the characters are ascii characters.
+# This method returns True if all the characters are ascii characters.
 
 string_27 = 'python is fun'
 result_70 = string_27.isascii()
@@ -300,3 +300,223 @@ string_29 = 'pythön is fun'
 result_72 = string_29.isascii()
 print(result_72) # Output: False
 
+##14. isdecimal()
+# This method returns True if all the characters are decimals (0-9).
+
+string_30 = '10'
+result_73 = string_30.isdecimal()
+print(result_73) # Output: True
+
+string_31 = '10 abc'
+result_74 = string_31.isdecimal()
+print(result_74) # Output: False
+
+string_32 = 'abc'
+result_75 = string_32.isdecimal()
+print(result_75) # Output: False
+
+string_33 = '10.5'
+result_76 = string_33.isdecimal()
+print(result_76) # Output: False
+
+string_34 = '10⁵'
+result_77 = string_34.isdecimal()
+print(result_77) # Output: False
+
+string_35 = '-10'
+result_78 = string_35.isdecimal()
+print(result_78) # Output: False
+
+##15. isdigit()
+#This method returns True if all the characters are digits, otherwise False.
+
+string_36 = '10'
+result_79 = string_36.isdigit()
+print(result_79) # Output: True
+
+string_37 = '10.5'
+result_80 = string_37.isdecimal()
+print(result_80) # Output: False
+
+string_38 = '-5'
+result_81 = string_38.isdecimal()
+print(result_81) # Output: False
+
+string_39 = '10⁵'
+result_82 = string_39.isdecimal()
+print(result_82) # Output: False
+
+string_40 = 'abc'
+result_83 = string_40.isdecimal()
+print(result_83) # Output: False
+
+##15. isidentifier()
+#This method returns True if the string is a valid identifier, otherwise False.
+#Valid identifiers contain alphanumeric letters (a-z) and (0-9), or underscores (_).
+#An identifier cannot start with number or white space.
+
+string_41 = 'hello'
+result_84 = string_41.isidentifier()
+print(result_84) # Output: True
+
+string_42 = 'hello 123'
+result_85 = string_42.isidentifier()
+print(result_85) # Output: False
+
+string_43 = 'hello_123'
+result_86 = string_43.isidentifier()
+print(result_86) # Output: True
+
+string_44 = 'hello123'
+result_87 = string_44.isidentifier()
+print(result_87) # Output: True
+
+string_45 = '123hello'
+result_88 = string_45.isidentifier()
+print(result_88) # Output: False
+
+string_46 = ' hello'
+result_85 = string_46.isidentifier()
+print(result_85) # Output: False
+
+##15. islower()
+#This method returns True if all the characters are in lower case
+
+string_47 = 'hello'
+result_86 = string_47.islower()
+print(result_86) # Output: True
+
+string_48 = 'Hello'
+result_87 = string_48.islower()
+print(result_87) # Output: False
+
+string_49 = 'hello world'
+result_88 = string_49.islower()
+print(result_88) # Output: True
+
+string_50 = 'hello world!'
+result_89 = string_50.islower()
+print(result_89) # Output: True
+
+string_51 = 'hello world 123'
+result_90 = string_51.islower()
+print(result_90) # Output: True
+
+##16. isnumeric()
+#This method returns True if all the characters are numeric (0-9), otherwise False.
+
+string_52 = '123'
+result_91 = string_52.isnumeric()
+print(result_91) # Output: True
+
+string_53 = 'A 123'
+result_92 = string_53.isnumeric()
+print(result_92) # Output: False
+
+string_54 = '100.0'
+result_93 = string_54.isnumeric()
+print(result_93) # Output: False
+
+string_55 = '-10'
+result_94 = string_55.isnumeric()
+print(result_94) # Output: False
+
+##17. isprintable()
+#This method returns True if all the characters are printable, otherwise False.
+
+string_56 = 'Hello world'
+result_95 = string_56.isprintable()
+print(result_95) # Output: True
+
+##18. isspace()
+#This method returns True if all the characters in a string are whitespaces, otherwise False.
+
+string_57 = '  '
+result_96 = string_57.isspace()
+print(result_96) # Output: True
+
+string_58 = ' hello '
+result_97 = string_58.isspace()
+print(result_97) # Output: False
+
+##19. istitle()
+#This method returns True if all words in a text start with a upper case letter, AND the rest of the word are lower case letters, otherwise False.
+
+string_58 = 'Hello World'
+result_98 = string_58.istitle()
+print(result_98) # Output: True
+
+string_59 = 'Hello world'
+result_99 = string_59.istitle()
+print(result_99) # Output: False
+
+string_60 = 'Hello World 123'
+result_100 = string_60.istitle()
+print(result_100) # Output: True
+
+string_61 = 'Hello World!'
+result_101 = string_61.istitle()
+print(result_101) # Output: True
+
+##20. isupper()
+#This method returns True if all the characters are in upper case, otherwise False.
+
+string_62 = 'I LOVE PYTHON'
+result_102 = string_62.isupper()
+print(result_102) # Output: True
+
+string_63 = 'I LOVE Python'
+result_103 = string_63.isupper()
+print(result_103) # Output: False
+
+string_64 = 'I LOVE PYTHON!'
+result_104 = string_64.isupper()
+print(result_104) # Output: True
+
+string_65 = 'I LOVE PYTHON 3'
+result_105 = string_65.isupper()
+print(result_105) # Output: True
+
+##21. join()
+#This join method, join(), is used to combine all the items of an iterable (example – list, tuple, set, etc.) into a single string separated by a separator.
+
+string_66 = ['I', 'love', 'python']
+result_103 = "".join(string_66)
+print(result_103) # Output: Ilovepython
+
+string_67 = ['I', 'love', 'python']
+result_104 = " ".join(string_67)
+print(result_104) # Output: I love python
+
+string_68 = ['I', 'love', 'python']
+result_105 = "-".join(string_68)
+print(result_105) # Output: I-love-python
+
+##22. ljust()
+#This method returns a left-justified string of a given width.
+
+string_69 = 'Python'
+result_106 = string_69.ljust(10, '*')
+print(result_106) # Output: Python****
+
+string_70 = 'Python'
+result_107 = string_70.ljust(20, '*')
+print(result_107) # Output: Python**************
+
+string_71 = 'Python'
+result_108 = string_71.ljust(20, '#')
+print(result_108) # Output: Python##############
+
+##23. lower()
+#This method returns a string where all characters are lower case.
+
+string_72 = 'I Love Python.'
+result_109 = string_72.lower()
+print(result_109) # Output: i love python.
+
+##24. lower()
+#This method returns a string where all characters are lower case.
+
+string_72 = 'I Love Python.'
+result_109 = string_72.lower()
+print(result_109) # Output: i love python.
