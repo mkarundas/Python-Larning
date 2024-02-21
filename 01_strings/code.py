@@ -520,3 +520,24 @@ print(result_109) # Output: i love python.
 string_72 = 'I Love Python.'
 result_109 = string_72.lower()
 print(result_109) # Output: i love python.
+
+##25. lstrip()
+#This method returns a copy of the string with leading characters stripped.
+
+string_73 = '    I Love Python.'
+result_110 = string_73.lstrip()
+print(result_110) # Output: I Love Python.
+
+string_74 = 'I Love Python.'
+result_111 = string_74.lstrip('I Love ')
+print(result_111) # Output: Python.
+
+##26. lstrip()
+#This method returns a copy of the string with leading characters stripped.
+
+string_73 = '    I Love Python.'
+result_110 = string_73.lstrip()
+print(result_110) # Output: I Love Python.
+
+
+
